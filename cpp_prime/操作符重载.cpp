@@ -32,7 +32,8 @@ public:
 //     double r = c1.re+c2.re;
 //     double i = 
 // }
-
+// 友元：类可以允许其他类或者函数访问它的私有成员变量，方法是令其他类或者函数成为类的友元
+// 在函数或类前声明`friend`
 
 int main(){
     Complex a = Complex(1.2, 3.4);
