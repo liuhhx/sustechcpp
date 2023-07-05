@@ -24,10 +24,18 @@ public:
     void func(int a){
         cout << a << endl;
     }
+    void funv(int a,int b){
+        cout << " this is funv in A class" << endl;
+        cout << a << " and " << b << endl;
+    }
 };
 class B: public A{
 public:
     void func(double a){ // 这是一个新的函数，直接覆盖了A中同名函数，而不是对A中的func重写
+        cout << a << endl;
+    }
+    void funv(int a){
+        cout << "this is funv in B class" << endl;
         cout << a << endl;
     }
 };
@@ -67,9 +75,14 @@ int main(){
     // auto var = new C();
     // var->print("Ss");
     // auto a= new AbstractClass(); // 错误 抽象类不能实例化
-    auto b = new ConcreteClass();
-    b->abstractFunction();
-    b->normalFunction();
-    return 0;
+    // auto b = new ConcreteClass();
+    // b->abstractFunction();
+    // b->normalFunction();
 
+    A* a = new B();
+    cout << typeid(a).name() << endl;
+    a->funv(1,2);
+    auto b = new B();
+    cout << typeid(b).name() << endl;
+    return 0;
 }
