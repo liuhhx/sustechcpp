@@ -57,4 +57,4 @@ int main(){
     Point num5 = sum(num3, num4);
     cout << num5.x <<" " << num5.y << endl;
     return 0;
-}
+} 
