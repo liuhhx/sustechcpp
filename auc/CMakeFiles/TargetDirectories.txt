@@ -1,0 +1,3 @@
+/workspaces/sustechcpp/auc/CMakeFiles/dotp.dir
+/workspaces/sustechcpp/auc/CMakeFiles/edit_cache.dir
+/workspaces/sustechcpp/auc/CMakeFiles/rebuild_cache.dir

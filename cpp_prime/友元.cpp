@@ -28,5 +28,21 @@ int main()
     std::cout << "Please input two integers:" << std::endl;
     std::cin >> t1;
     std::cout << t1 << std::endl;
+
+
+    // ----
+    // MyTime t1(2, 20);
+    int minutes = t1; // 隐式转换
+    float f = float(t1); // 显式转换
+    // float g = t1; // 隐式转换 但是会报错因为限制了必须显示转换
+    // 隐式转换往往不可靠
+
+    MyTime t(1,59);
+    MyTime t4 = t++;
+    MyTime t5 = ++t;
+
+    std::cout << "t is : " << t1 << std::endl;
+    std::cout << "t4 is : "<< t4 << std::endl;
+    std::cout << "t5 is : "<< t5 << std::endl;
     return 0;
 }
