@@ -77,3 +77,31 @@ delete [] pa; // 调用的是pa中所有元素的析构
 delete pa; // 调用的是pa中第一个元素的析构
 // 建议只要是new[] 就delete[]
 ```
+
+
+
+
+
+
+## 不同的继承权限
+1. public inheritance
+    - public members of the base class
+        - 在派生类中依然是public
+        - 可以在任何地方用
+    - protected members of the base class
+        - 在派生类中依然是protected
+        - 只能在派生类里用
+    - private members of the base class
+        - 不能在派生类中用
+
+2. protectd inheritance
+    - public members and protected members of the base class
+        - 在派生类中都会变成protected，只能在派生类中访问
+    - private members of the base class
+        - 不能在派生类中使用
+
+3. private inheritance
+    - public members and protected members of the base class
+        - 在派生类中都变成private，只能在派生类中访问
+    - private members of the base class
+        - 不能在派生类中使用
